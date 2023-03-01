@@ -71,13 +71,13 @@ const Who = () => {
       <Container>
         <Left>{/* 3d model */}</Left>
         <Right>
-          <Title>Design. Develop. Deploy</Title>
+          <Title>Think outside the square space</Title>
           <WhatWeDo>
             <Line> &macr;</Line>
             <SubTitle>What I do</SubTitle>
           </WhatWeDo>
-          <Desc>I enjoy developing elegant, modern digital experiences.</Desc>
-          <Button>Learn More</Button>
+          <Desc>A Create designer and developer with passion for coding.</Desc>
+          <Button>See my Work</Button>
         </Right>
       </Container>
     </Section>
