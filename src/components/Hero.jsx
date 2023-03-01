@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import { MeshDistortMaterial, OrbitControls, Sphere } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
 
 const Section = styled.div`
   height: 100vh;
@@ -40,7 +42,7 @@ const Line = styled.span`
 `;
 
 const SubTitle = styled.h2`
-  color: #91a7ff;
+  color: #15aabf;
 `;
 
 const Desc = styled.p`
@@ -49,7 +51,8 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-  background-color: #91a7ff;
+  background-color: #15aabf;
+  color: white;
   font-weight: 500;
   width: max-content;
   padding: 10px 20px;
@@ -97,6 +100,19 @@ const Hero = () => {
         </Left>
         <Right>
           {/*3d model */}
+          <Canvas>
+            <OrbitControls enableZoom={false} />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Sphere args={[1, 100, 200]} scale={2.5}>
+              <MeshDistortMaterial
+                color="#15aabf"
+                attach="material"
+                distort={0.5}
+                speed={2}
+              />
+            </Sphere>
+          </Canvas>
           <Img src="./img/alien.png" />
         </Right>
       </Container>

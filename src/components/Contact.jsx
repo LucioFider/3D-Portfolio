@@ -48,7 +48,7 @@ const TextArea = styled.textarea`
 `;
 
 const Button = styled.button`
-  background-color: #91a7ff;
+  background-color: #15aabf;
   color: white;
   border: none;
   border-radius: 5px;

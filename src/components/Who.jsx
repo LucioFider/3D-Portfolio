@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import Navbar from "./Navbar";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import Cube from "./Cube";
 
 const Section = styled.div`
   height: 100vh;
@@ -47,7 +49,7 @@ const Line = styled.span`
 `;
 
 const SubTitle = styled.h2`
-  color: #91a7ff;
+  color: #15aabf;
 `;
 
 const Desc = styled.p`
@@ -56,7 +58,7 @@ const Desc = styled.p`
 `;
 
 const Button = styled.button`
-  background-color: #91a7ff;
+  background-color: #15aabf;
   font-weight: 500;
   width: max-content;
   padding: 10px 20px;
@@ -69,7 +71,14 @@ const Who = () => {
   return (
     <Section>
       <Container>
-        <Left>{/* 3d model */}</Left>
+        <Left>
+          <Canvas camera={{ fov: 25, position: [5, 5, 5] }}>
+            <OrbitControls enableZoom={false} autoRotate />
+            <ambientLight intensity={1} />
+            <directionalLight position={[3, 2, 1]} />
+            <Cube />
+          </Canvas>
+        </Left>
         <Right>
           <Title>Think outside the square space</Title>
           <WhatWeDo>
