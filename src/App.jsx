@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Contact, Hero, Who, Works } from "./components";
+import Test from "./components/Test";
 
 const Container = styled.div`
   height: 100vh;
@@ -24,6 +25,7 @@ function App() {
       <Who />
       <Works />
       <Contact />
+      <Test />
     </Container>
   );
 }
