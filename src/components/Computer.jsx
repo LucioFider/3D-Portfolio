@@ -6,90 +6,249 @@ source: https://sketchfab.com/3d-models/computer301-e4a2a939bb8445da8db8050e52bb
 title: COMPUTER301
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import React, { useRef } from "react";
+import { useGLTF } from "@react-three/drei";
 
-export function Model(props) {
-  const { nodes, materials } = useGLTF('/computer-transformed.glb')
+export default function Model(props) {
+  const { nodes, materials } = useGLTF("/computer-transformed.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <group rotation={[Math.PI / 2, 0, 0]}>
-          <group position={[-6.54, 12.49, 2.27]} rotation={[0, -0.23, 0]} scale={[0.42, 1.15, 1.23]}>
-            <mesh geometry={nodes.Object_4.geometry} material={materials['1COMP-CASE-0']} />
-            <mesh geometry={nodes.Object_5.geometry} material={materials['COMP-BACK-0']} />
-            <mesh geometry={nodes.Object_6.geometry} material={materials['COMP-FRONT-0']} />
+          <group
+            position={[-6.54, 12.49, 2.27]}
+            rotation={[0, -0.23, 0]}
+            scale={[0.42, 1.15, 1.23]}
+          >
+            <mesh
+              geometry={nodes.Object_4.geometry}
+              material={materials["1COMP-CASE-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_5.geometry}
+              material={materials["COMP-BACK-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_6.geometry}
+              material={materials["COMP-FRONT-0"]}
+            />
           </group>
           <group position={[0, 11.25, 1.14]} scale={[8.67, 0.09, 1.77]}>
-            <mesh geometry={nodes.Object_8.geometry} material={materials['1DESK-0']} />
+            <mesh
+              geometry={nodes.Object_8.geometry}
+              material={materials["1DESK-0"]}
+            />
           </group>
-          <group position={[-1.15, 11.39, 1.58]} rotation={[0, 0.27, 0]} scale={[1.07, 0.5, 0.33]}>
-            <mesh geometry={nodes.Object_10.geometry} material={materials['1KB-BASE-0']} />
+          <group
+            position={[-1.15, 11.39, 1.58]}
+            rotation={[0, 0.27, 0]}
+            scale={[1.07, 0.5, 0.33]}
+          >
+            <mesh
+              geometry={nodes.Object_10.geometry}
+              material={materials["1KB-BASE-0"]}
+            />
           </group>
-          <group position={[-2.18, 11.39, 1.6]} rotation={[-Math.PI, -0.27, -Math.PI]} scale={[-0.04, 0.56, 0.04]}>
-            <mesh geometry={nodes.Object_12.geometry} material={materials['1KEYS-0']} />
+          <group
+            position={[-2.18, 11.39, 1.6]}
+            rotation={[-Math.PI, -0.27, -Math.PI]}
+            scale={[-0.04, 0.56, 0.04]}
+          >
+            <mesh
+              geometry={nodes.Object_12.geometry}
+              material={materials["1KEYS-0"]}
+            />
           </group>
-          <group position={[0, 12.53, 0.22]} rotation={[Math.PI / 2, 0, 0]} scale={[1.82, 1.36, 0.85]}>
-            <mesh geometry={nodes.Object_14.geometry} material={materials['1PIC-0']} />
+          <group
+            position={[0, 12.53, 0.22]}
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={[1.82, 1.36, 0.85]}
+          >
+            <mesh
+              geometry={nodes.Object_14.geometry}
+              material={materials["1PIC-0"]}
+            />
           </group>
-          <group position={[0, 15.33, -0.31]} rotation={[Math.PI / 2, 0, 0]} scale={[3.09, 1.36, 1.45]}>
-            <mesh geometry={nodes.Object_16.geometry} material={materials['2PIC-0']} />
+          <group
+            position={[0, 15.33, -0.31]}
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={[3.09, 1.36, 1.45]}
+          >
+            <mesh
+              geometry={nodes.Object_16.geometry}
+              material={materials["2PIC-0"]}
+            />
           </group>
-          <group position={[0, 12.53, 0.17]} rotation={[Math.PI / 2, 0, 0]} scale={[1.88, 1.4, 0.92]}>
-            <mesh geometry={nodes.Object_18.geometry} material={materials['SCREEN-0']} />
+          <group
+            position={[0, 12.53, 0.17]}
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={[1.88, 1.4, 0.92]}
+          >
+            <mesh
+              geometry={nodes.Object_18.geometry}
+              material={materials["SCREEN-0"]}
+            />
           </group>
-          <group position={[-1.15, 11.38, 1.58]} rotation={[0, 0.27, 0]} scale={[1.32, 0.04, 0.41]}>
-            <mesh geometry={nodes.Object_20.geometry} material={materials['SCREEN-0']} />
+          <group
+            position={[-1.15, 11.38, 1.58]}
+            rotation={[0, 0.27, 0]}
+            scale={[1.32, 0.04, 0.41]}
+          >
+            <mesh
+              geometry={nodes.Object_20.geometry}
+              material={materials["SCREEN-0"]}
+            />
           </group>
-          <group position={[-7.66, 10.02, 7.55]} rotation={[-Math.PI / 2, 0, 3.03]} scale={[-1, 1, 0.04]}>
-            <mesh geometry={nodes.Object_22.geometry} material={materials['HANDLE-0']} />
+          <group
+            position={[-7.66, 10.02, 7.55]}
+            rotation={[-Math.PI / 2, 0, 3.03]}
+            scale={[-1, 1, 0.04]}
+          >
+            <mesh
+              geometry={nodes.Object_22.geometry}
+              material={materials["HANDLE-0"]}
+            />
           </group>
-          <group position={[-6.03, 12.49, 2.39]} rotation={[0, -0.23, -1.57]} scale={[0.93, 0.98, 1]}>
-            <mesh geometry={nodes.Object_24.geometry} material={materials['COMP-SIDE-0']} />
+          <group
+            position={[-6.03, 12.49, 2.39]}
+            rotation={[0, -0.23, -1.57]}
+            scale={[0.93, 0.98, 1]}
+          >
+            <mesh
+              geometry={nodes.Object_24.geometry}
+              material={materials["COMP-SIDE-0"]}
+            />
           </group>
-          <group position={[-6.77, 13.64, 3.27]} rotation={[0.18, -0.23, 0.04]} scale={[0.07, 0.01, 0.04]}>
-            <mesh geometry={nodes.Object_26.geometry} material={materials['ON-OFF-0']} />
+          <group
+            position={[-6.77, 13.64, 3.27]}
+            rotation={[0.18, -0.23, 0.04]}
+            scale={[0.07, 0.01, 0.04]}
+          >
+            <mesh
+              geometry={nodes.Object_26.geometry}
+              material={materials["ON-OFF-0"]}
+            />
           </group>
-          <group position={[0, 13.39, -0.41]} rotation={[Math.PI / 2, 0, 0]} scale={[2.57, 1, 2.04]}>
-            <mesh geometry={nodes.Object_28.geometry} material={materials['SCREEN-0']} />
+          <group
+            position={[0, 13.39, -0.41]}
+            rotation={[Math.PI / 2, 0, 0]}
+            scale={[2.57, 1, 2.04]}
+          >
+            <mesh
+              geometry={nodes.Object_28.geometry}
+              material={materials["SCREEN-0"]}
+            />
           </group>
           <group position={[-0.17, 8.82, 3.73]} scale={[9.6, 9.6, 5.58]}>
-            <mesh geometry={nodes.Object_30.geometry} material={materials['1CARPET-0']} />
+            <mesh
+              geometry={nodes.Object_30.geometry}
+              material={materials["1CARPET-0"]}
+            />
           </group>
-          <group position={[6.27, 12.36, 1.93]} rotation={[0, -0.56, 0]} scale={[0.61, 1.03, 0.59]}>
-            <mesh geometry={nodes.Object_32.geometry} material={materials['1SPEAKER-0']} />
-            <mesh geometry={nodes.Object_33.geometry} material={materials['1SPEAKER-0']} />
-            <mesh geometry={nodes.Object_34.geometry} material={materials['SPEAKER1-0']} />
+          <group
+            position={[6.27, 12.36, 1.93]}
+            rotation={[0, -0.56, 0]}
+            scale={[0.61, 1.03, 0.59]}
+          >
+            <mesh
+              geometry={nodes.Object_32.geometry}
+              material={materials["1SPEAKER-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_33.geometry}
+              material={materials["1SPEAKER-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_34.geometry}
+              material={materials["SPEAKER1-0"]}
+            />
           </group>
-          <group position={[-4.88, 9.82, 1.3]} rotation={[0, 0.65, 0]} scale={[0.61, 1.03, 0.59]}>
-            <mesh geometry={nodes.Object_38.geometry} material={materials['SPEAKER1-0']} />
-            <mesh geometry={nodes.Object_36.geometry} material={materials['1SPEAKER-0']} />
-            <mesh geometry={nodes.Object_37.geometry} material={materials['1SPEAKER-0']} />
+          <group
+            position={[-4.88, 9.82, 1.3]}
+            rotation={[0, 0.65, 0]}
+            scale={[0.61, 1.03, 0.59]}
+          >
+            <mesh
+              geometry={nodes.Object_38.geometry}
+              material={materials["SPEAKER1-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_36.geometry}
+              material={materials["1SPEAKER-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_37.geometry}
+              material={materials["1SPEAKER-0"]}
+            />
           </group>
-          <group position={[-3.62, 12.53, 1.08]} rotation={[Math.PI / 2, 0, -0.46]} scale={[1.82, 1.36, 0.85]}>
-            <mesh geometry={nodes.Object_40.geometry} material={materials['3PIC-0']} />
+          <group
+            position={[-3.62, 12.53, 1.08]}
+            rotation={[Math.PI / 2, 0, -0.46]}
+            scale={[1.82, 1.36, 0.85]}
+          >
+            <mesh
+              geometry={nodes.Object_40.geometry}
+              material={materials["3PIC-0"]}
+            />
           </group>
-          <group position={[3.6, 12.53, 1.07]} rotation={[Math.PI / 2, 0, 0.47]} scale={[1.82, 1.36, 0.85]}>
-            <mesh geometry={nodes.Object_42.geometry} material={materials['4PIC-0']} />
+          <group
+            position={[3.6, 12.53, 1.07]}
+            rotation={[Math.PI / 2, 0, 0.47]}
+            scale={[1.82, 1.36, 0.85]}
+          >
+            <mesh
+              geometry={nodes.Object_42.geometry}
+              material={materials["4PIC-0"]}
+            />
           </group>
-          <group position={[7.56, 10.46, 14.91]} rotation={[0, -0.83, 0]} scale={[1, 0.22, 1]}>
-            <mesh geometry={nodes.Object_44.geometry} material={materials['CHAIR-0']} />
-            <mesh geometry={nodes.Object_45.geometry} material={materials['1CHAIR-0']} />
+          <group
+            position={[7.56, 10.46, 14.91]}
+            rotation={[0, -0.83, 0]}
+            scale={[1, 0.22, 1]}
+          >
+            <mesh
+              geometry={nodes.Object_44.geometry}
+              material={materials["CHAIR-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_45.geometry}
+              material={materials["1CHAIR-0"]}
+            />
           </group>
           <group position={[-0.03, 11.35, 1.87]} scale={[2.9, 1, 0.82]}>
-            <mesh geometry={nodes.Object_47.geometry} material={materials['MAT-0']} />
+            <mesh
+              geometry={nodes.Object_47.geometry}
+              material={materials["MAT-0"]}
+            />
           </group>
-          <group position={[5, 11.9, 2.59]} rotation={[0, -0.3, 0]} scale={[0.17, 0.54, 0.17]}>
-            <mesh geometry={nodes.Object_49.geometry} material={materials['BOTTLE-0']} />
-            <mesh geometry={nodes.Object_50.geometry} material={materials['MYBOTTLE-0']} />
+          <group
+            position={[5, 11.9, 2.59]}
+            rotation={[0, -0.3, 0]}
+            scale={[0.17, 0.54, 0.17]}
+          >
+            <mesh
+              geometry={nodes.Object_49.geometry}
+              material={materials["BOTTLE-0"]}
+            />
+            <mesh
+              geometry={nodes.Object_50.geometry}
+              material={materials["MYBOTTLE-0"]}
+            />
           </group>
-          <group position={[0.98, 11.38, 1.74]} rotation={[0, -0.54, 0]} scale={[0.17, 0.11, 0.26]}>
-            <mesh geometry={nodes.Object_52.geometry} material={materials['MOUSE-0']} />
+          <group
+            position={[0.98, 11.38, 1.74]}
+            rotation={[0, -0.54, 0]}
+            scale={[0.17, 0.11, 0.26]}
+          >
+            <mesh
+              geometry={nodes.Object_52.geometry}
+              material={materials["MOUSE-0"]}
+            />
           </group>
         </group>
       </group>
     </group>
-  )
+  );
 }
 
-useGLTF.preload('/computer-transformed.glb')
+useGLTF.preload("/computer-transformed.glb");
